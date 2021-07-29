@@ -22,6 +22,7 @@ class Janken
     pattern = ["グー","チョキ","パー"]
     if player_hand !="0\n" && player_hand !="1\n" && player_hand !="2\n"
       player = Player.new
+      enemy = Enemy.new
       janken = Janken.new
       janken.pon(player.hand, enemy.hand)
     else
